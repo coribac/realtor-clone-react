@@ -117,7 +117,9 @@ export default function CreateListing() {
     const formDataCopy={
       ...formData,
       imgUrls,
-      timestamp:serverTimestamp()
+      userRef:auth.currentUser.uid,
+      timestamp:serverTimestamp(),
+      
     }
     delete formDataCopy.images
     !formDataCopy.offer && delete formDataCopy.discountedPrice
