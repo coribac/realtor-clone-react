@@ -5,6 +5,7 @@ import { db } from '../firebase'
 import Spinner from '../components/Spinner'
 import {Swiper, SwiperSlide} from "swiper/react"
 import Contact from '../components/Contact'
+import {MapContainer,TileLayer,Marker,Popup } from "react-leaflet"
 import SwiperCore,{EffectFade,Autoplay,Navigation,Pagination} from "swiper"
 import {FaShare,FaMapMarkerAlt,FaBed,FaBath, FaParking, FaChair} 
 from "react-icons/fa"
@@ -127,7 +128,11 @@ export default function Listing() {
             />
             )}
          </div>
-         <div className='bg-blue-300 w-full h-[200px] lg-[400px] z-10 overflow-x-hidden'></div>
+         <div className='w-full h-[200px] lg-[400px] z-10 overflow-x-hidden'>
+          
+          
+
+         </div>
          </div>
         </main>
     )
